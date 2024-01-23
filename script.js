@@ -35,6 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
             createGrid(new_pad_size);
         }
     })
-
+    createGrid(16);
 
 });
