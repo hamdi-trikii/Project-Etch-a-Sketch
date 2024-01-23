@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-
+    function getRandomColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+    }
 
 
     function createGrid(size) {
@@ -19,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const squares=document.querySelectorAll(".grid-square");
         squares.forEach(square => {
             square.addEventListener('mouseenter', function() {
-                square.style.backgroundColor = '#66a3ff';
+                square.style.backgroundColor = getRandomColor();
             });
         });
     }
