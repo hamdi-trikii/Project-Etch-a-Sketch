@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    gap: 5vh;
+    
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw; 
+    background-color: rebeccapurple;
+    
+}
+
+.grid-square {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#reset-button {
+    background-color: #4a90e2; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+    background-color: #800080; 
+}
